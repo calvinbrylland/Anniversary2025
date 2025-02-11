@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Beautiful Journey 💕</title>
+    <title>Happy Anniversary of Our Beautiful Journey 💕</title>
     <style>
 	.cute-gif {
     width: 150px; /* Adjust size */
@@ -56,10 +56,32 @@
         }
     </style>
 </head>
+
+<script>
+    function updateTimer() {
+        const startDate = new Date("February 12, 2022 19:00:00").getTime();
+        const now = new Date().getTime();
+        const difference = now - startDate;
+
+        const years = Math.floor(difference / (1000 * 60 * 60 * 24 * 365));
+        const days = Math.floor((difference % (1000 * 60 * 60 * 24 * 365)) / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+        document.getElementById("countup-timer").innerHTML =
+            `${years} years, ${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds 💖`;
+    }
+
+    setInterval(updateTimer, 1000); // Update every second
+    updateTimer(); // Initial call
+</script>
+
+
 <body>
-    <h1>Our Beautiful Journey Together 💖</h1>
+    <h1>Happy Anniversary of Our Beautiful Journey 💖</h1>
     <img src="cute.gif" alt="Cute Animation" class="cute-gif">
-    <p>Three years of love, laughter, and unforgettable moments. I am so grateful for every second with you. ❤️</p>
+    <p>Three years of love, laughter, and unforgettable moments. I am so grateful for every second with you. Let me recall it for you.❤️</p>
 
 
     <audio autoplay loop hidden>
@@ -70,21 +92,44 @@
 
     <div class="gallery">
         <div class="photo-card">
-            <img src="a.jpeg" alt="Our Moment 1">
-            <p>The moment we first met, my heart knew you were special. 💞</p>
+            <img src="i.jpeg" alt="Our Moment 1">
+	    <img src="m.jpeg" alt="Our Moment 1">
+            <p>It all began with the arrival of this adorable little girl in this world. 💞</p>
+        </div>
+	<div class="photo-card">
+            <img src="j.jpeg" alt="Our Moment 2">
+            <p>You can’t imagine how happy I am on that time—our first time jogging together has led to even more meaningful quality time! 🥰</p>
+        </div>
+	<div class="photo-card">
+            <img src="l.jpeg" alt="Our Moment 2">
+            <p>This is our very first trip together, but with our family! A mix of happiness and sadness, but overall, I wish it would never end. 🤍✨</p>
+        </div>
+	<div class="photo-card">
+            <img src="d.jpeg" alt="Our Moment 2">
+            <p>Our first solo trip... well, technically three of us, including your friend! 😆✈️</p>
         </div>
         <div class="photo-card">
-            <img src="b.jpeg" alt="Our Moment 2">
-            <p>Through the ups and downs, you've always been my rock. 🥰</p>
+            <img src="g.jpeg" alt="Our Moment 2">
+            <p>Through all the ups and downs, you've always been my rock. From nothing, you stood by my side until I completed my college journey. 🥰</p>
         </div>
+	<div class="photo-card">
+            <img src="h.jpeg" alt="Our Moment 3">
+            <p>This was when I got rejected by BCA, and while we were dating, Siloam suddenly called me for an interview—and I passed! You were there by my side through it all, remember? 😊💕</p>
+        </div>
+
         <div class="photo-card">
-            <img src="c.jpeg" alt="Our Moment 3">
+            <img src="k.jpeg" alt="Our Moment 3">
             <p>Every smile, every laugh, every tear—I'm grateful for it all. 💕</p>
         </div>
         <div class="photo-card">
-            <img src="d.jpeg" alt="Our Moment 4">
-            <p>Thank you for being my love, my best friend, my everything. 😘</p>
+            <img src="e.jpeg" alt="Our Moment 4">
+            <p>Now here we are, three years together, witnessing our journey. Thank you for being my love, my best friend, my everything. 😘I'll definitely wait for you!!💕</p>
         </div>
     </div>
+<h2>We've been together for:</h2>
+<p id="countup-timer" style="font-size: 20px; font-weight: bold; color: #ff4d6d;"></p>
+<i2>(By the way, this instrument you're hearing now was written two years ago for you… I used to play it as a background for songs in church, and nobody knew! 😆🎶)</i2>
+
+
 </body>
 </html>
